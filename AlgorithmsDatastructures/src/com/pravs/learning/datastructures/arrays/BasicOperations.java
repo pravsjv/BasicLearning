@@ -6,7 +6,7 @@ package com.pravs.learning.datastructures.arrays;
 public class BasicOperations {
 
     //defining and initializing an array
-    //Arrays store elements in contiguous locations. Linear in accessing elements and inserting elements
+    //Arrays store elements in contiguous locations. Linear in accessing elements iwth O(n) and inserting elementso(1)
     //disadv - fixed size.
     private static int[] unsortedArray = new int[8];
     public static void main(String[] args)
@@ -21,12 +21,18 @@ public class BasicOperations {
     }
 
     //printing elements
-    public static void printArray(int[] sortedArray)
+    public static void printArray(int[] array)
     {
-        for(int i=0; i<sortedArray.length; ++i)
+        for(int i=0; i<array.length; ++i)
         {
-            System.out.println(sortedArray[i]);
+            System.out.println(array[i]);
         }
+    }
+
+    //inserting elements into the array
+    public static void insertSortedArray(int val, int[] a)
+    {
+        if()
     }
 
     //accessing elements
