@@ -13,10 +13,13 @@ public class BasicOperations {
     {
         int[] sortedArray = new int[8];
         //initializing the arrays.
-        for(int i=0; i<7; ++i)
-        {
-            sortedArray[i] = i;
-        }
+        sortedArray[0] = 5;
+        sortedArray[1] = 8;
+        sortedArray[2] = 10;
+        sortedArray[3] = 13;
+        sortedArray[4] = 16;
+        printArray(sortedArray);
+        insertSortedArray(9,sortedArray);
         printArray(sortedArray);
     }
 
@@ -32,7 +35,22 @@ public class BasicOperations {
     //inserting elements into the array
     public static void insertSortedArray(int val, int[] a)
     {
-        if()
+        int i =0;
+        for(i=0; i<a.length; i++)
+        {
+            if(a[i]>val)
+            {
+                break;
+            }
+        }
+
+        for(int k=i; i<a.length-1; k++)
+        {
+            a[k+1] = a[k];
+            a[i] = val;
+        }
+
+        printArray(a);
     }
 
     //accessing elements
