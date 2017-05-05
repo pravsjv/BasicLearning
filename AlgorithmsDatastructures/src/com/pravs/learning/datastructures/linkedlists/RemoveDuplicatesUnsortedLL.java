@@ -3,6 +3,10 @@ package com.pravs.learning.datastructures.linkedlists;
 import java.util.HashSet;
 /**
  * Created by praveenkumarjv on 5/4/17.
+ *
+ * Approach1: Run 2 loops and eliminate the duplicates in the linkedlist. TimeComplexity: O(n*2) Space: O(1)
+ * Approach2: Sort the LinkedList and remove the duplicates TimeComplexity: depends on the sorting algorithm used.
+ * Approach3: Using hashing technique we can insert all the unique elements in the hashset/map/table and remove the rest of the elements.
  */
 public class RemoveDuplicatesUnsortedLL {
 
