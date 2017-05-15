@@ -41,7 +41,7 @@ public class LevelOrderSpiralTraversal {
     void levelOrderSpiralTraversal(Node n)
     {
         int h = height(n);
-        1boolean flag = false;
+        boolean flag = false;
 
         for(int i=0; i<=h; i++)
         {

@@ -18,9 +18,13 @@ public class BasicOperations {
         sortedArray[2] = 10;
         sortedArray[3] = 13;
         sortedArray[4] = 16;
-        printArray(sortedArray);
+        sortedArray[5] = 19;
+        sortedArray[6] = 21;
+
         insertSortedArray(9,sortedArray);
         printArray(sortedArray);
+
+        deleteSortedArray(13, sortedArray);
     }
 
     //printing elements
@@ -28,8 +32,9 @@ public class BasicOperations {
     {
         for(int i=0; i<array.length; ++i)
         {
-            System.out.println(array[i]);
+            System.out.print(array[i]+" , ");
         }
+        System.out.println();
     }
 
     //inserting elements into the array
@@ -43,14 +48,31 @@ public class BasicOperations {
                 break;
             }
         }
-
-        for(int k=i; i<a.length-1; k++)
-        {
-            a[k+1] = a[k];
+        if(i<a.length) {
+            for (int k = a.length - 1; k > i; k--) {
+                a[k] = a[k - 1];
+            }
             a[i] = val;
         }
+    }
 
-        printArray(a);
+    public static void deleteSortedArray(int val, int[] a) {
+        int i = 0;
+        int len = a.length;
+        for (i = 0; i < len - 1; i++) {
+            if (a[i] == val) {
+                break;
+            }
+        }
+        for (int k = i; k < len - 1; k++) {
+            a[k] = a[k + 1];
+        }
+        len--;
+
+        for(int j=0; j<len; j++)
+        {
+            System.out.print(a[j]+" , ");
+        }
     }
 
     //accessing elements
