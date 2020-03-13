@@ -5,3 +5,5 @@ But the important thing to remember while using recursion is mentioning of "func
 Note that O(h) translates to O(log n) for balanced trees, but O(n) for skewed trees.
 - If each node has parent field, use it to make your code simpler, and to reduce space and time complexity
 - Its easy to make the mistake of treating  a node that the single child as a leaf.
+- Most of the questions related to Trees or Graphs can be solved either through BFS or DFS
+- Every Recursive solution can be converted to Iterative solution by using Stack.
