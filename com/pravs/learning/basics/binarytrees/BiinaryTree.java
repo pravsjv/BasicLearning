@@ -22,5 +22,15 @@ public class BinaryTree<T> {
 		PostOrderTraversal<String> pot = new PostOrderTraversal<>();
 		System.out.print("PostOrderTraversal using Recursive Function: ");
 		pot.recursiveTraversal(bt.root);
+
+		//PreOrder Iterative Traversal
+		System.out.println();
+		System.out.print("InOrderTraversal using Iterative Function: ");
+		io.recursiveTraversal(bt.root);
+
+		//PreOrder Iterative Traversal
+		System.out.println();
+		System.out.print("PreOrderTraversal using Iterative Function: ");
+		po.recursiveTraversal(bt.root);
 	}
 }

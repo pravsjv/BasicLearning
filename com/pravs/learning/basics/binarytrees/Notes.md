@@ -15,3 +15,8 @@
     - PreOrder Traversal : root -> left -> right
     - InOrder Traversal : left -> root -> right
     - PostOrder Traversal : left -> right -> root
+
+  - A binary tree is said to be height balanced if for each node in the tree, the difference in the height of left and right sub trees is at most 1.
+  - A perfect binary tree is height balanced, as is a complete binary tree.
+  - A height balanced tree need not be a perfect tree or a complete tree.
+  
