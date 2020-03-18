@@ -38,6 +38,7 @@ Arrays in Java:
 	- Arrays are treated as objects in java
 	- Every array type implements the interfaces Cloneable and Serializable
 	- Direct super class of an array is Object itself.
+	- Arrays in java are Zero index based
 
 Most Used Methods for Arrays in Java:
 	- arr.length - returns the length of the array.
